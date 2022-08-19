@@ -52,37 +52,34 @@
       <div class="container">
 
         <div class="row">
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch service-card" data-aos="fade-up">
-            <div class="icon-box icon-box-pink">
+					<router-link class="col-md-6 col-lg-3 d-flex align-items-stretch service-card" data-aos="fade-up" style="text-decoration: none; color:black" :to="{ name : 'bankInfoList' }">
+						<div class="icon-box icon-box-pink">
               <div class="icon"><i class="fa-solid fa-building-columns"></i></div>
-              <h4 class="title"><router-link style="text-decoration: none;" :to="{ name : 'bankInfoList' }">은행 정보</router-link></h4>
+              <h4 class="title">은행 정보</h4>
               <p class="description">은행 별 예금, 적금 상품 정보를 보고 상품을 선별할 수 있습니다.</p>
             </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch service-card" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon-box icon-box-cyan">
+					</router-link>
+					<router-link class="col-md-6 col-lg-3 d-flex align-items-stretch service-card" data-aos="fade-up" style="text-decoration: none; color:black" :to="{ name : 'productRecommend' }">
+						<div class="icon-box icon-box-cyan">
               <div class="icon"><i class="fa-solid fa-thumbs-up"></i></div>
-              <h4 class="title"><router-link style="text-decoration: none;" :to="{ name : 'productRecommend' }">상품 추천</router-link></h4>
+              <h4 class="title">상품 추천</h4>
               <p class="description">조건을 설정해 그에 맞는 예금, 적금 상품을 추천받을 수 있습니다.</p>
             </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch service-card" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon-box icon-box-green">
+					</router-link>
+					<router-link class="col-md-6 col-lg-3 d-flex align-items-stretch service-card" data-aos="fade-up" style="text-decoration: none; color:black" :to="{ name : 'portfolio' }">
+						<div class="icon-box icon-box-green">
               <div class="icon"><i class="fa-solid fa-cart-arrow-down"></i></div>
-              <h4 class="title"><router-link style="text-decoration: none;" :to="{ name : 'portfolio' }">포트폴리오</router-link></h4>
+              <h4 class="title">포트폴리오</h4>
               <p class="description">상품을 모아 자신만의 예금, 적금 상품 포트폴리오를 만들 수 있습니다.</p>
             </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch service-card" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon-box icon-box-blue">
+					</router-link>
+					<router-link class="col-md-6 col-lg-3 d-flex align-items-stretch service-card" data-aos="fade-up" style="text-decoration: none; color:black" :to="{ name : 'contents' }">
+						<div class="icon-box icon-box-blue">
               <div class="icon"><i class="fa-solid fa-newspaper"></i></div>
-              <h4 class="title"><router-link style="text-decoration: none;" :to="{ name : 'contents' }">컨텐츠</router-link></h4>
+              <h4 class="title">컨텐츠</h4>
               <p class="description">QueÆnt팀에서 엄선해 제작한 다양한 금융 컨텐츠를 즐길 수 있습니다.</p>
             </div>
-          </div>
+					</router-link>
         </div>
       </div>
     </section><!-- End Services Section -->
