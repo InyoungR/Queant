@@ -21,18 +21,18 @@ export default {
     SET_BANKS(state, banks) {
       for (let bank of banks) {
         if (bank.scode_id === 'C001') {
-          if (state.theFirstBanks.find(theFirstBank => theFirstBank.bank_id === bank.bank_id))
-            console.log(theFirstBank)
+          if (state.theFirstBanks.length > 0 && state.theFirstBanks.find(theFirstBank => theFirstBank.bank_id === bank.bank_id))
+            continue
           else
             state.theFirstBanks.push(bank)
         } else if (bank.scode_id === 'C002') {
-          if (state.theSecondBanks.find(theSecondBank => theSecondBank.bank_id === bank.bank_id))
-            console.log(theSecondBank)
+          if (state.theSecondBanks.length > 0 && state.theSecondBanks.find(theSecondBank => theSecondBank.bank_id === bank.bank_id))
+            continue
           else
             state.theSecondBanks.push(bank)
         } else if (bank.scode_id === 'C003') {
-          if (state.theThirdBanks.find(theThirdBank => theThirdBank.bank_id === bank.bank_id))
-            console.log(theThirdBank)
+          if (state.theThirdBanks.length > 0 && state.theThirdBanks.find(theThirdBank => theThirdBank.bank_id === bank.bank_id))
+            continue
           else
             state.theThirdBanks.push(bank)
         }
