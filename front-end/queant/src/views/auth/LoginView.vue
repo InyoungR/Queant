@@ -138,7 +138,7 @@ export default {
   font-family: LeferiBaseType-RegularA !important;
 }
 
-@import url(http://fonts.useso.com/css?family=Source+Sans+Pro:200,300);
+/* @import url(http://fonts.useso.com/css?family=Source+Sans+Pro:200,300); */
 * {
   box-sizing: border-box;
   margin: 0;
